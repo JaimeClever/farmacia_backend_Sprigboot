@@ -68,6 +68,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
 
                         .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/usuarios/admin").permitAll()
 
                         .requestMatchers("/api/reniec/**").permitAll()
 
